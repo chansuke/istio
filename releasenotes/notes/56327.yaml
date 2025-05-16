@@ -1,0 +1,9 @@
+apiVersion: release-notes/v2
+kind: feature
+area: installation
+issue: 56327
+releaseNotes: |
+  **Added** Helm values to configure additional PodDisruptionBudget(PDB) settings for istiod:
+  - `pilot.pdb.minAvailable` - Configure the minAvailable value (default: 1)
+  - `pilot.pdb.maxUnavailable` - Use maxUnavailable instead of minAvailable
+  - `pilot.pdb.unhealthyPodEvictionPolicy` - Configure the unhealthyPodEvictionPolicy

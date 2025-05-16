@@ -214,6 +214,10 @@ _internal_defaults_do_not_set:
   experimental:
     stableValidationPolicy: false
 
+pilot:
+  # Pod Disruption Budget settings for istiod
+  pdb: {}
+
   global:
     # Used to locate istiod.
     istioNamespace: istio-system
